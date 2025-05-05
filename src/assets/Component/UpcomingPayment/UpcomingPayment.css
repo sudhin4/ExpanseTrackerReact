@@ -1,0 +1,54 @@
+.Logo_for_upcomingPayment {
+    width: 50px;
+    height: 50px;
+}
+
+.Title_of_thePayment {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.Price_of_theUPcomponent {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    color: red;
+}
+
+.date_of_up_component {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.847);
+}
+
+.Heading_payment_Price {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+}
+
+.Card_ {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.208);
+    border-radius: 5px;
+    width: 250px;
+    padding: 10px;
+    
+}
+
+.Options_div_Upcom {
+    position: absolute;
+    left: 19%;
+    top: 3%;
+}
+
+.options_upcominngpayment_logo {
+    font-size: 20px;
+    cursor: pointer;
+}

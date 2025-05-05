@@ -1,0 +1,32 @@
+.Price_Income_heading{
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 20px;
+    color: green;
+    
+}
+.Income_heading_section{
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+    bottom: 10px;
+    color: rgba(0, 0, 0, 0.639);
+    
+}
+.Carddd_income{
+    width: 200px;
+    height: 70px;
+    border-radius: 5px;
+    display: flex;
+    border:1px solid rgba(0, 0, 0, 0.329);
+    flex-direction: column;
+    line-height: 0px;
+    padding: 20px;
+    background-color: white;
+    color: black;
+}
+
+.Expanses_amount{
+    color: red;
+}
