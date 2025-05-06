@@ -2,6 +2,8 @@ import PhoneImage from "../UpcomingPayment/Phone Image.png";
 import '../UpcomingPayment/UpcomingPayment.css'
 import { BsThreeDots } from "react-icons/bs";
 import Electric from '../UpcomingPayment/Electric city.png'
+import { FaPlus } from "react-icons/fa";
+
 
 
 function Upcomingpayment() {
@@ -20,6 +22,9 @@ function Upcomingpayment() {
           <div className="Options_div_Upcom">
           <BsThreeDots className="options_upcominngpayment_logo"/>
           </div>
+        </div>
+        <div className="add_upcoming_btn_upcomingcomp">
+          <button className="btn_add_upcoming"><FaPlus className="add_plus_icon_logo"/>Add</button>
         </div>
       </div>
     </>

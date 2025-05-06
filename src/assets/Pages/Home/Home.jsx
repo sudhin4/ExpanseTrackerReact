@@ -21,8 +21,13 @@ function Home() {
               <p className="btn_add_home">Add</p>
             </button>
           </div>
+          <h1 className="upcomingPayment_heading___">Upcoming payment</h1>
           <div className="upcoming_payment_details_div">
-            <Upcomingpayment />
+            
+            <div className="component_upcoming_payment">
+              
+              <Upcomingpayment />
+            </div>
           </div>
         </div>
       </div>

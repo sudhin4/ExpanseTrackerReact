@@ -45,4 +45,19 @@
     border-radius: 10px;
     padding: 20px;
     margin-top: 10px;
+    height: 120px;
+}
+.component_upcoming_payment{
+    position: relative;
+    top: 17px;
+}
+.upcomingPayment_heading___{
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 16px;
+    position: absolute;
+    top: 38%;
+    left: 2.5%;
+   
+
 }
