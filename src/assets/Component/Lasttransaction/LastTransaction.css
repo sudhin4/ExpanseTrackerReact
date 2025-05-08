@@ -1,0 +1,53 @@
+.heading_last{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+}
+.WHole_Heading_Div{
+    display: flex;
+    gap: 65px;
+}
+.Image_for_TRANSACTION_NAME{
+    width: 30px;
+    height: 30px;
+}
+.DATAA{
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 17px;
+}
+.PAYMENT_modeimage_for_lasttransaction{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 45px;
+}
+.DaTE_lastTRANSACTION{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    margin: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+}
+.TRANSAction_name{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+}
+.Data_forAMOUNTExpanse{
+    color: rgba(234, 62, 65, 1);
+    position: relative;
+    left: 125px;
+}
+.Data_forDATE{
+    font-size: 15px;
+    position: relative;
+    left: 20px;
+}
+.category_INLASTTransaction{
+    position: relative;
+    left: 110px;
+}

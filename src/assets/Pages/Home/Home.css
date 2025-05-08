@@ -40,24 +40,49 @@
     right: 26.5%;
 }
 .upcoming_payment_details_div{
-    width: 70%;
+    width: 100%;
     border:  1px solid rgba(0, 0, 0, 0.187);
     border-radius: 10px;
     padding: 20px;
     margin-top: 10px;
-    height: 120px;
+    height: 150px;
 }
-.component_upcoming_payment{
-    position: relative;
-    top: 17px;
-}
+
 .upcomingPayment_heading___{
-    font-family: 'Roboto';
-    font-weight: 600;
-    font-size: 16px;
-    position: absolute;
-    top: 38%;
-    left: 2.5%;
+   font-family: 'Roboto';
+   font-weight: 500;
+   font-size: 18px; 
+   position: relative;
+   bottom: 20px;
    
 
+}
+.LaasTTransaction_heading_INHOME{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 20px;
+}
+.LAstTransaction_home_Divvv{
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.251);
+}
+.Data_for_last{
+    border: 1px solid rgba(0, 0, 0, 0.299);
+    padding: 10px;
+    border-radius: 10px;
+}
+.WHole_home_divvv{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.Left_MenuBar_section_IN_home{
+    height: 650px;
+    width: 19%;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
 }
