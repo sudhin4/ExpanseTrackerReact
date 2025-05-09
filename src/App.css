@@ -1,0 +1,19 @@
+.Left_MenuBar_section_IN_home{
+    height: 650px;
+    width: 19%;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    
+}
+.MenuBar_othercompContDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    
+}
+.Right_section_pages{
+    position: relative;
+    top: 17px;
+}

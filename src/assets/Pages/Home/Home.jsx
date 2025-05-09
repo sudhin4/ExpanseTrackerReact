@@ -12,10 +12,8 @@ import MenuBar from "../../Component/LeftTaskbar/MenuBar";
 function Home() {
   return (
     <>
-      <div className="WHole_home_divvv">
-        <div className="Left_MenuBar_section_IN_home">
-          <MenuBar />
-        </div>
+    
+        
         <div className="Right_Section_div_in_home">
           <div className="Expanse_Details_components_in_homee">
             <div className="FirstComponents_divv">
@@ -50,7 +48,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
+      
     </>
   );
 }

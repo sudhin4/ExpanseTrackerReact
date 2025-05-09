@@ -44,9 +44,9 @@
 }
 
 .Options_div_Upcom {
-    position: absolute;
-    left: 19%;
-    top: 3%;
+    position: relative;
+    left: 70px;
+    bottom: 32px;
 }
 
 .options_upcominngpayment_logo {

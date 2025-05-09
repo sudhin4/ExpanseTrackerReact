@@ -19,9 +19,9 @@ function Upcomingpayment() {
             <p className="Price_of_theUPcomponent">₹495.00</p>
             <p className="date_of_up_component">05-05-2025</p>
           </div>
-          {/* <div className="Options_div_Upcom">
+           <div className="Options_div_Upcom">
           <BsThreeDots className="options_upcominngpayment_logo"/>
-          </div> */}
+          </div> 
         </div>
         <div className="add_upcoming_btn_upcomingcomp">
           <button className="btn_add_upcoming"><FaPlus className="add_plus_icon_logo"/>Add</button>
