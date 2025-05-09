@@ -51,3 +51,26 @@
     position: relative;
     left: 110px;
 }
+.EditBtn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    background-color: rgba(2, 169, 2, 0.87);
+    border: none;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    position: relative;
+    left: 130px;
+    bottom: 3px;
+    transition: transform 0.2s;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 15px;
+}
+.EditBtn:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
