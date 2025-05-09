@@ -2,6 +2,7 @@ import Header from "./assets/Component/Header/Header";
 import Home from "./assets/Pages/Home/Home";
 import '../src/App.css'
 import MenuBar from "./assets/Component/LeftTaskbar/MenuBar";
+import Dashboard from "./assets/Pages/LastTransaction/Dashboard";
 
 function App() {
   return (
@@ -13,7 +14,11 @@ function App() {
             <MenuBar />
           </div>
           <div className="Right_section_pages">
-           <Home /> 
+           {/* <Home />  */}
+           <div className="Dashboard_APp_section">
+            <Dashboard/>
+           </div>
+           
           </div>
           
         </div>

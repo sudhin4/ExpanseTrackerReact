@@ -17,3 +17,11 @@
     position: relative;
     top: 17px;
 }
+.Dashboard_APp_section{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.395);
+    position: relative;
+    bottom: 260px;
+    border-radius: 10px;
+}
