@@ -1,22 +1,26 @@
+import Choosetypelist from "../TypeList/TypelistMapfull.jsx";
+import CategoryDropdown from "../Categorydropdown/CategoryDropdown.jsx";
+import addlogo from '../AddBtn/Add Income Image.png'
+import '../AddBtn/Addbtn.css'
+
 function Addbtn(){
     return(
         <>
         <div className="whole_add_btnCOmponentDiv">
             <div className="inputFields_div">
-                <label className="label inputlabelName">Transaction Name</label>
-                <input type="text" className="input_add TransactionName__" placeholder="Fuel" />
-                <label className="label inputlabelAmount">Enter Amount</label>
-                <input type="number" className="input_add" placeholder="450.00" />
-                <label className="label inputlabelCategory">Category</label>
-                <select name="Choose a value" defaultValue={"Choose a value"} className="category input_add">
-                    <option value=''>Choose a category</option>
-                    <option value="Income">Income</option>
-                    <option value="Expanse">Expanse</option>
-                </select>
-                <input type="date" />
+                <img src={addlogo} alt="" className="addbtnlogo_image" /><br /> 
+                <label className="label inputlabelName">Transaction Name</label><br />
+                <Choosetypelist/><br />
+                <label className="label inputlabelAmount">Enter Amount</label><br />
+                <input type="number" className="input_add " placeholder="₹450.00" /><br />
+                <label className="label inputlabelCategory">Choose a Category</label><br />
+                <CategoryDropdown/><br />
+                <label className="label inputlabelCategory">Enter date</label><br />
+                <input type="date" className="data_inputlabel" /><br />
                 
 
             </div>
+            <button className='SaveBtn_add_btn'>Save</button>
         </div>
         </>
     )

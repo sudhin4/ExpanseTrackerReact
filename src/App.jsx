@@ -10,13 +10,16 @@ import {
   BrowserRouter,
 } from "react-router-dom";
 import { ExpanseImage } from "./Data/IncExpdata";
+import { useState,useContext } from "react";
+import { Datacontext } from "./Data/Context";
 
 function App() {
 
-    const Image = ExpanseImage[15].image;
+  
 
   return (
     <>
+   
       <Router>
         <div className="WHole_app_div">
           <Header />
@@ -29,7 +32,7 @@ function App() {
                 path="/"
                 element={
                   <div className="Right_section_pages">
-                    <Home />
+                    <Home  />
                   </div>
                 }
               />
@@ -46,6 +49,7 @@ function App() {
         </div>
         
       </Router>
+   
     </>
   );
 }
