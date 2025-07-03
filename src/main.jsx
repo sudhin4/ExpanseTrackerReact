@@ -8,12 +8,13 @@ import Dashboard from './assets/Pages/LastTransaction/Dashboard.jsx'
 import Addbtn from './assets/Component/AddBtn/AddBtn.jsx'
 import { Typelist } from './assets/Component/TypeList/TypeList.jsx'
 import Choosetypelist from './assets/Component/TypeList/TypelistMapfull.jsx'
+import Newaddbtn_ from './assets/Component/NewAddbtn_design/Newaddtn.jsx'
 
 import TypelistmapFull from './assets/Component/TypeList/TypelistMapfull.jsx'
 import CategoryDropdown, { CategoryDropdowncontent } from './assets/Component/Categorydropdown/CategoryDropdown.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    < Addbtn/>
+    < Newaddbtn_/>
   </StrictMode>,
 )

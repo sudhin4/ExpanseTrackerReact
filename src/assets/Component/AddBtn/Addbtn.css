@@ -32,7 +32,7 @@
     width: 100px;
     height: 100px;
     position: relative;
-    left: 100px;
+    left: 80px;
     margin-bottom: 15px;
 }
 .SaveBtn_add_btn{
@@ -64,4 +64,18 @@
     left: 35%;
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.237);
+    
+}
+.close_btn_add_btn{
+    font-size: 30px;
+    position: relative;
+    left: 290px;
+    bottom: 80px;
+    transition: transform 0.5s;
+
+}
+.close_btn_add_btn:hover{
+    transform: scale(1.10);
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.644);
 }
