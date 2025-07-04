@@ -14,6 +14,7 @@ import Rent from '../Images/Expanse categories/RentImage.png';
 import Subscription from '../Images/Expanse categories/Subscription Image.png';
 import travel from '../Images/Expanse categories/travel vacation Image.png';
 import Utilites from '../Images/Expanse categories/utilities.png'
+import Others from '../Images/Expanse categories/Others Image.png'
 
 
 
@@ -93,5 +94,9 @@ export const ExpanseImage = [
     {
         name : 'Utilities',
         image:Utilites
+    },
+    {
+        name: 'Others',
+        image:Others,
     }
 ]

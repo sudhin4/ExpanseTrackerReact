@@ -14,7 +14,7 @@
     flex-direction: row;
     align-items: center;
     gap: 20px;
-    width: 300px;
+    width: 390px;
     padding: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.164);
     transition: transform 0.5s;
@@ -37,7 +37,7 @@
 }
 
 .choose_typelist_div {
-    width: 300px;
+    width: 355px;
     padding-left: 10px;
     border: 1px solid rgba(0, 0, 0, 0.205);
     border-radius: 5px;
@@ -69,7 +69,7 @@
 }
 
 .fullcontent_component_list {
-    width: 309px;
+    width: 360px;
     border: 1px solid rgba(0, 0, 0, 0.221);
     border-radius: 5px;
     height: 300px;

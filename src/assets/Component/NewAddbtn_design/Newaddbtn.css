@@ -48,7 +48,7 @@
     cursor: pointer;
 }
 ._clicked{
-    background-color: rgb(0, 119, 237);
+    background-color: black;
     color: white;
 }
 .category_choose_div___{
@@ -102,7 +102,7 @@
 }
 .addYourMoneyDetails{
     font-family: "Roboto";
-    font-weight: 400;
+    font-weight: 600;
     font-size: 25px;
     align-items: center;
     
@@ -110,4 +110,10 @@
 .heading_div_details{
     display: flex;
     justify-content: center;
+}
+.errorPara_for{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 13px;
+    color: red;
 }
