@@ -6,7 +6,7 @@ function IncomeCard(){
         <div className="Whole_Income_card">
             <div className="Carddd_income">
                 <h2 className="Price_Income_heading">₹45,500</h2>
-                <h4 className="Income_heading_section">Income</h4>
+                <h4 className="Income_heading_section Income_headdd">Income</h4>
             </div>
         </div>
         </>

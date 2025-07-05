@@ -10,12 +10,15 @@ import LastTransactionheading, {
 import MenuBar from "../../Component/LeftTaskbar/MenuBar";
 import Addbtn from "../../Component/AddBtn/AddBtn";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import Newaddbtn_ from "../../Component/NewAddbtn_design/Newaddtn";
 
 function Home() {
   const [isaddbtnopen, setisaddbtnopen] = useState(false);
   return (
     <>
       {isaddbtnopen ? <Addbtn /> : null}
+
       <div className="Right_Section_div_in_home">
         <div className="Expanse_Details_components_in_homee">
           <div className="FirstComponents_divv">
@@ -24,10 +27,12 @@ function Home() {
             <ExpanseCard />
           </div>
           <div className="Btn_div">
-            <button className="Btn_for_add">
-              <FaPlus className="Logo_for_add_btn" />
-              <p className="btn_add_home">Add</p>
-            </button>
+            <Link to={"/AddincomeorExpansepage"}>
+              <button className="Btn_for_add">
+                <FaPlus className="Logo_for_add_btn" />
+                <p className="btn_add_home">Add</p>
+              </button>
+            </Link>
           </div>
 
           <div className="upcoming_payment_details_div">

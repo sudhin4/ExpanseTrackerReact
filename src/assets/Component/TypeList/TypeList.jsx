@@ -23,10 +23,19 @@ function Typelistcontent({ image, name, getvalueeimagefun, getvaluenamefun }) {
 }
 export default Typelistcontent;
 
-import { Datacontext } from "../../../Data/Context";
+import { Datacontext } from "../../../Data/Context";//base of the dropdown
 import { ExpanseImage } from "../../../Data/IncExpdata";
-export function Typelist({ getvalueimage, getvaluename }) {
-  const dropdown_listandImage = ExpanseImage;
+import { IncomeImage } from "../../../Data/IncExpdata";
+export function Typelist({ getvalueimage, getvaluename,isitincomeorexpanse }) {
+
+  const checkincomeorexpanse = isitincomeorexpanse;
+  var dropdown_listandImage = ExpanseImage;// default
+  if(checkincomeorexpanse==false){
+    dropdown_listandImage = ExpanseImage; //false means expanse
+  }
+  else{
+    dropdown_listandImage = IncomeImage // true means income
+  }
 
   return (
     <>

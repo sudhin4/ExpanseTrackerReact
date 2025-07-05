@@ -100,3 +100,58 @@ export const ExpanseImage = [
         image:Others,
     }
 ]
+
+// Income image section
+
+import Bonus from '../Images/Income Categories/Bonus Image.png'
+import Business from '../Images/Income Categories/Business Image.png'
+import Freelance from '../Images/Income Categories/Freelance Image.png'
+import gift from '../Images/Income Categories/gift.png'
+import Investment from '../Images/Income Categories/investment Income Image.png'
+import Pension from '../Images/Income Categories/Pension Image.png'
+import Rental from '../Images/Income Categories/Rental Income Image.png'
+import Salary from '../Images/Income Categories/Salary Image.png'
+
+export const IncomeImage=[
+    {
+        name:'Bonus',
+        image:Bonus,
+    },
+    {
+        name:'Business',
+        image:Business,
+    },
+    {
+        name:'Freelance',
+        image:Freelance,
+    },
+    {
+        name:'Gift',
+        image:gift,
+    },
+    {
+        name:'Investment',
+        image:Investment,
+    },
+    {
+        name:'Pension',
+        image:Pension,
+    },
+    {
+        name:'Rental',
+        image:Rental,
+    },
+
+    {
+        name:'Salary',
+        image:Salary,
+    },
+    {
+        name:'Others',
+        image:Others,
+    },
+
+
+
+
+]

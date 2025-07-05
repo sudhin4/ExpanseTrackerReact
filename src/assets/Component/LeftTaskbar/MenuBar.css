@@ -22,14 +22,11 @@
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    color: white;
+    color: black;
 
 }
 
-.div_menuuu:hover {
-    cursor: pointer;
-    color: rgba(255, 255, 255, 0.596);
-}
+
 
 .Content_menuBar_divvv {
     display: flex;

@@ -1,9 +1,10 @@
 .Left_MenuBar_section_IN_home{
     height: 650px;
     width: 250px;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
     border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.24);
 
 }
 .MenuBar_othercompContDiv{
@@ -27,4 +28,18 @@
 .Right_section_pages{
     position: relative;
     top: 16px;
+}
+.newbtnsection{
+    border: 1px solid rgba(0, 0, 0, 0.379);
+    width: 100%;
+    border-radius:10px;
+    position: relative;
+    bottom: 10px;
+    padding-bottom: 30px;
+}
+.component_of_theaddbtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

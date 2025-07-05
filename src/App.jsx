@@ -12,6 +12,7 @@ import {
 import { ExpanseImage } from "./Data/IncExpdata";
 import { useState,useContext } from "react";
 import { Datacontext } from "./Data/Context";
+import Newaddbtn_ from "./assets/Component/NewAddbtn_design/Newaddtn";
 
 function App() {
 
@@ -44,6 +45,16 @@ function App() {
                   </div>
                 }
               />
+              <Route
+              path="/AddincomeorExpansepage"
+              element={
+                <div className="newbtnsection">
+                  <div className="component_of_theaddbtn">
+                    <Newaddbtn_ />
+                  </div>
+                </div>
+                
+              }/>
             </Routes>
           </div>
         </div>

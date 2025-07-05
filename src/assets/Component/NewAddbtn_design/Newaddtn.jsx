@@ -5,10 +5,12 @@ import Expanse_Image from "../NewAddbtn_design/Expanse image For Expanse.png";
 import CategoryDropdown from "../Categorydropdown/CategoryDropdown";
 import Choosetypelist from "../TypeList/TypelistMapfull";
 import { useState, useEffect } from "react";
+import { incomeorexpansecontext } from "../../../Data/Context";
 
 function Newaddbtn_() {
   const [getcategorystateincome, setgetcategorystateincome] = useState();
-  const [getcategorystateexpanse, setgetcategorystateexpanse] = useState();
+  const [getcategorystateexpanse, setgetcategorystateexpanse] = useState(true);
+  const [checkincomeorexpanse, setincomeorexpanse] = useState(false) //false : Expanse || true : income
   // store and get data from user
   const [getamount, setgetamount] = useState();
   const [getdate, setgetdate] = useState();
@@ -82,20 +84,25 @@ function Newaddbtn_() {
   }
 
   //select income or expanse category method
+  
   function getcategoryyy(value) {
     setcategory(value);
     if (value == "income") {
       setgetcategorystateexpanse(false);
       setgetcategorystateincome(true);
+      setincomeorexpanse(true) // check Income or not
     } else if (value == "expanse") {
       setgetcategorystateincome(false);
       setgetcategorystateexpanse(true);
+      setincomeorexpanse(false)//check Expanse or not
     }
   }
+  
 
   return (
     <>
-      <div className="heading_div_details">
+    
+       <div className="heading_div_details">
         <h1 className="addYourMoneyDetails">Add your money details.!</h1>
       </div>
 
@@ -138,7 +145,7 @@ function Newaddbtn_() {
             <label htmlFor="category" className="label--- label_for_category">
               Choose Category
             </label>
-            <Choosetypelist getname={gettingname} getimage={gettingimage} />
+            <Choosetypelist getname={gettingname} getimage={gettingimage} isincomeorexpanse={checkincomeorexpanse} />
           </div>
           <div className="Amount_div_for_addbtn section_wise_add_button">
             <label htmlFor="" className="label--- label_for_amount">
@@ -192,6 +199,8 @@ function Newaddbtn_() {
           </button>
         </div>
       </div>
+
+     
     </>
   );
 }

@@ -13,8 +13,9 @@ import Newaddbtn_ from './assets/Component/NewAddbtn_design/Newaddtn.jsx'
 import TypelistmapFull from './assets/Component/TypeList/TypelistMapfull.jsx'
 import CategoryDropdown, { CategoryDropdowncontent } from './assets/Component/Categorydropdown/CategoryDropdown.jsx'
 
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    < Newaddbtn_/>
+    <App/>
   </StrictMode>,
 )
