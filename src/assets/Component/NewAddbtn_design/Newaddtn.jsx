@@ -7,18 +7,19 @@ import Choosetypelist from "../TypeList/TypelistMapfull";
 import { useState, useEffect } from "react";
 import { incomeorexpansecontext } from "../../../Data/Context";
 
-function Newaddbtn_() {
+
+function Newaddbtn_({getuserdata}) {
   const [getcategorystateincome, setgetcategorystateincome] = useState();
   const [getcategorystateexpanse, setgetcategorystateexpanse] = useState(true);
-  const [checkincomeorexpanse, setincomeorexpanse] = useState(false) //false : Expanse || true : income
+  const [checkincomeorexpanse, setincomeorexpanse] = useState(false); //false : Expanse || true : income
   // store and get data from user
-  const [getamount, setgetamount] = useState();
-  const [getdate, setgetdate] = useState();
-  const [getnote, setgetnote] = useState();
-  const [getcategory, setcategory] = useState();
-  const [getimage, setgetimage] = useState();
-  const [getname, setgetname] = useState();
-  const [getdatafromuser, setgetdatafromuser] = useState([]);// main data
+  const [getamount, setgetamount] = useState("");
+  const [getdate, setgetdate] = useState("");
+  const [getnote, setgetnote] = useState("");
+  const [getcategory, setcategory] = useState("expanses");
+  const [getimage, setgetimage] = useState("");
+  const [getname, setgetname] = useState("");
+  const [getdatafromuser, setgetdatafromuser] = useState([]); // main data
   // push a value to the state
   function pushdatatoarray() {
     const newdata = {
@@ -33,45 +34,31 @@ function Newaddbtn_() {
     };
     setgetdatafromuser((prev) => [...prev, newdata]);
   }
- 
+
   const [getdateiscorrect, setdateiscorrect] = useState(false);
   const [pleaseenterdate, setpleaseenterdata] = useState(false);
 
-
   // check the value is type or not
-  function checkingprocessbtn(){
+  function checkingprocessbtn() {
     const todaydate = new Date();
-    if (
-    getname !== undefined &&
-    getamount !== undefined &&
-    getcategory !== undefined &&
-    getdate !== undefined &&
-    getnote !== undefined
-  ) {
-    if (new Date(getdate) <= todaydate) {
-      pushdatatoarray();
-      setgetamount("");
-      setgetdate("");
-      setgetnote("");
-      setdateiscorrect(false)
- 
-      
+    if (getname && getamount && getcategory && getdate && getnote) {
+      if (new Date(getdate) <= todaydate) {
+        pushdatatoarray();
+        setgetamount("");
+        setgetdate("");
+        setgetnote("");
+        setdateiscorrect(false);
+      } else {
+        setdateiscorrect(true);
+      }
     } else {
-      setdateiscorrect(true);
-      
+      setpleaseenterdata(true);
     }
-  } else {
-    setpleaseenterdata(true);
-  }
   }
 
-
- useEffect(()=>{
-  console.log(getdatafromuser)
- },[getdatafromuser])
-
-
-
+  useEffect(() => {
+    getuserdata(getdatafromuser)
+  }, [getdatafromuser]);
 
   // get type of expanse or income
   function gettingname(namee) {
@@ -84,25 +71,23 @@ function Newaddbtn_() {
   }
 
   //select income or expanse category method
-  
-  function getcategoryyy(value) {
+
+  function getcategoryyy(value="expanses") {
     setcategory(value);
     if (value == "income") {
       setgetcategorystateexpanse(false);
       setgetcategorystateincome(true);
-      setincomeorexpanse(true) // check Income or not
+      setincomeorexpanse(true); // check Income or not
     } else if (value == "expanse") {
       setgetcategorystateincome(false);
       setgetcategorystateexpanse(true);
-      setincomeorexpanse(false)//check Expanse or not
+      setincomeorexpanse(false); //check Expanse or not
     }
   }
-  
 
   return (
     <>
-    
-       <div className="heading_div_details">
+      <div className="heading_div_details">
         <h1 className="addYourMoneyDetails">Add your money details.!</h1>
       </div>
 
@@ -145,7 +130,11 @@ function Newaddbtn_() {
             <label htmlFor="category" className="label--- label_for_category">
               Choose Category
             </label>
-            <Choosetypelist getname={gettingname} getimage={gettingimage} isincomeorexpanse={checkincomeorexpanse} />
+            <Choosetypelist
+              getname={gettingname}
+              getimage={gettingimage}
+              isincomeorexpanse={checkincomeorexpanse}
+            />
           </div>
           <div className="Amount_div_for_addbtn section_wise_add_button">
             <label htmlFor="" className="label--- label_for_amount">
@@ -189,9 +178,15 @@ function Newaddbtn_() {
             />
           </div>
         </div>
-        {getdateiscorrect?<p className="errorPara_for _Date">*Choose Correct date(not future)</p>:null}
-        {pleaseenterdate? <p className="errorPara_for _data">*Fill all the inputs</p>:null}
-        
+        {getdateiscorrect ? (
+          <p className="errorPara_for _Date">
+            *Choose Correct date(not future)
+          </p>
+        ) : null}
+        {pleaseenterdate ? (
+          <p className="errorPara_for _data">*Fill all the inputs</p>
+        ) : null}
+
         <div className="buttons_for_save_addbtn">
           <button className="cancel_btn__ btn_addbtn">Cancel</button>
           <button className="Add_btn__ btn_addbtn" onClick={checkingprocessbtn}>
@@ -199,8 +194,6 @@ function Newaddbtn_() {
           </button>
         </div>
       </div>
-
-     
     </>
   );
 }

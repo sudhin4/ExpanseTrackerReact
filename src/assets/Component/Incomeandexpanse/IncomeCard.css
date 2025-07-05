@@ -33,3 +33,30 @@
 .Expanses_amount{
     color: red;
 }
+.Todayexpanse_heading{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.715);
+    position: relative;
+   
+}
+.calenderIMage_section{
+    width: 20px;
+    height: 20px;
+}
+.calender_imagediv{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    position: relative;
+    bottom: 30px;
+    transition: transform 0.5s;
+
+
+}
+.calender_imagediv:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}

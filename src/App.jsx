@@ -10,17 +10,26 @@ import {
   BrowserRouter,
 } from "react-router-dom";
 import { ExpanseImage } from "./Data/IncExpdata";
-import { useState,useContext } from "react";
+import { useState,useContext, useEffect } from "react";
 import { Datacontext } from "./Data/Context";
 import Newaddbtn_ from "./assets/Component/NewAddbtn_design/Newaddtn";
+import { Maincontextdata } from "./Data/Context";
 
 function App() {
 
+  const [userdata,setuserdata] = useState([]);
+
+  function getdatafromnewaddbtn(value){
+    setuserdata(value);
+  }
+
+  
+  
   
 
   return (
     <>
-   
+    <Maincontextdata value={{maindata: userdata}}>
       <Router>
         <div className="WHole_app_div">
           <Header />
@@ -50,7 +59,7 @@ function App() {
               element={
                 <div className="newbtnsection">
                   <div className="component_of_theaddbtn">
-                    <Newaddbtn_ />
+                    <Newaddbtn_ getuserdata={getdatafromnewaddbtn} />
                   </div>
                 </div>
                 
@@ -61,6 +70,8 @@ function App() {
         
       </Router>
    
+    </Maincontextdata>
+      
     </>
   );
 }

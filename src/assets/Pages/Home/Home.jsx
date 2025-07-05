@@ -8,16 +8,17 @@ import LastTransactionheading, {
   DataInLastTransaction,
 } from "../../Component/Lasttransaction/LastTransaction";
 import MenuBar from "../../Component/LeftTaskbar/MenuBar";
-import Addbtn from "../../Component/AddBtn/AddBtn";
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Newaddbtn_ from "../../Component/NewAddbtn_design/Newaddtn";
+import settingslider from './settings-sliders.png'
 
 function Home() {
-  const [isaddbtnopen, setisaddbtnopen] = useState(false);
+  
   return (
     <>
-      {isaddbtnopen ? <Addbtn /> : null}
+      
 
       <div className="Right_Section_div_in_home">
         <div className="Expanse_Details_components_in_homee">
@@ -36,16 +37,27 @@ function Home() {
           </div>
 
           <div className="upcoming_payment_details_div">
-            <h1 className="upcomingPayment_heading___">Upcoming payment</h1>
+            <h1 className="upcomingPayment_heading___">Upcoming payments</h1>
             <div className="component_upcoming_payment">
               <Upcomingpayment />
             </div>
           </div>
 
           <div className="LAstTransaction_home_Divvv">
-            <h1 className="LaasTTransaction_heading_INHOME">
-              Last Transaction
-            </h1>
+            <div className="first_heading_filters">
+              <h1 className="LaasTTransaction_heading_INHOME">
+                Last Transaction
+              </h1>
+              <div className="filters_div_section">
+                <img
+                  src={settingslider}
+                  alt=""
+                  className="lastTransaction_calenderIMage"
+                />
+                <h2 className="filter_heading">Filters</h2>
+              </div>
+            </div>
+
             <div className="Data_for_last">
               <LastTransactionheading />
               <div className="DaTa_component_div">

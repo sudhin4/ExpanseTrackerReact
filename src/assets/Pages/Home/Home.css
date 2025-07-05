@@ -51,7 +51,7 @@
 .upcomingPayment_heading___{
    font-family: 'Roboto';
    font-weight: 500;
-   font-size: 18px; 
+   font-size: 23px; 
    position: relative;
    bottom: 20px;
    
@@ -73,5 +73,34 @@
     border: 1px solid rgba(0, 0, 0, 0.299);
     padding: 10px;
     border-radius: 10px;
+}
+.lastTransaction_calenderIMage{
+    width: 25px;
+    height: 25px;
+}
+.filter_heading{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.721);
+}
+.filters_div_section{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    height: 40px;
+    width: 130px;
+    background-color: white;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.first_heading_filters{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 70%;
 }
 
